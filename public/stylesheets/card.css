@@ -2,6 +2,11 @@
 	text-align: center;
 }
 
+.card-container {
+    height: 180px;
+    display: inline-block;
+}
+
 .card {
 	width: 180px;
 	display: inline-block;

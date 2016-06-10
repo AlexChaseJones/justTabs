@@ -5,8 +5,8 @@
 </div>
 <div id="cards-container">
 {{#each docs}}
-<div class="card-container">
-	<div class="card" data-id="{{this._id}}">
+<div class="card-container" data-id="{{this._id}}">
+	<div class="card">
 		<div class="heading {{this.rating_val}}">
 			<h1>{{this.song}} {{this.type}}</h1>
 			<h2>{{this.artist}}</h2>
@@ -19,7 +19,6 @@
 			<h4>{{this.rating_text}}</h4>
 		</div>
 	</div>
-	<div class="clearfix"></div>
 </div>
 {{/each}}
 <button id="scrolltop" class="btn btn-block btn-info">Top</button>
