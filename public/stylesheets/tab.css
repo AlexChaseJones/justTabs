@@ -1,0 +1,81 @@
+#_header {
+	float: left;
+	width: 450px;
+	text-align: center;
+}
+
+#rating {
+	float: right;
+	width: 200px;
+	text-align: center;
+}
+
+#tab-container {
+	min-width: 375px;
+}
+
+.fontsize {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	border: 1px solid black;
+	border-radius: 3px;
+	vertical-align: bottom;
+	margin: 5px;
+	background-color: rgba(255,255,255,.5);
+	cursor:pointer;
+	float: left
+}
+
+.fontsize:hover {
+	box-shadow: 0px 0px 5px 1px black
+}
+
+.fontsize:click {
+	box-shadow: 0px 0px 5px 1px black inset;
+}
+#increase {
+	font-size: 2.2em;
+	text-align: center;
+	padding-top: 2px;
+}
+
+#decrease {
+	font-size: 1.2em;
+	text-align: center;	
+	line-height: 50px;
+}
+
+#commentAnchor {
+	float: right;
+	font-size: 1.2em;
+	margin: 10px;
+}
+
+#comments-container {
+	background-color: rgba(255,255,255,.5);
+	border-radius: 15px;
+	border:1px solid rgba(0,0,0,.5);
+	width: 100%;
+	padding: 10px;
+}
+
+.commentCont {
+	margin: 10px 30px;
+	border-bottom: 1px solid rgba(0,0,0,.3);
+}
+
+.username {
+	float: left;
+	font-size: 1.3em;
+}
+
+.usercomment {
+	clear: both;
+	text-indent: 20px;
+}
+
+.userdate{
+	float: right;
+	font-size: 1.3em;
+}

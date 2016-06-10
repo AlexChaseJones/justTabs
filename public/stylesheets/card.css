@@ -1,0 +1,107 @@
+#cards-container {
+	text-align: center;
+}
+
+.card {
+	width: 180px;
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid rgba(0,0,0,.5);
+	height: 180px;
+	text-align: center;
+	margin: 5px 4px;
+	font-family: helvetica, sans-serif;
+	position: relative;
+	opacity: 0;
+	top: 50px;
+	float: left;
+	transition: box-shadow .3s;
+	overflow: hidden;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.card:hover {
+	cursor: pointer;
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,.7);
+	border: 1px solid rgba(0,0,0,.8)
+}
+.card:hover .heading {
+	height: 100%;
+}
+
+.card:hover .heading span {
+	opacity: 1;
+}
+
+.card:hover .rating {
+	opacity: 0;
+}
+
+.heading {
+	background-color: rgba(3,3,3,.8);
+	padding: 5px;
+	height: 50%;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: rgba(255,255,255,.9);
+	transition: height .4s;
+}
+
+.heading span {
+	position: absolute;
+	bottom: 25px; 
+	left: 45px;
+	font-size: 1.6em;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity .8s;
+}
+
+.ratebar {
+	height: 4px;
+	width: 0px;
+	z-index: -1;
+	border-bottom-right-radius: 2px;
+	border-top-right-radius: 2px;
+	border-bottom: 1px solid rgba(0,0,0,.3)
+
+}
+
+.rating {
+	position: absolute;
+	bottom: 0px;
+	width: 180px;
+	text-align: center;
+	opacity: 1;
+	transition: opacity .5s
+}
+
+[class="rating 4.9"], [class="rating 4.8"], [class="rating 4.7"], [class="rating 4.6"], [class="rating 4.5"] {
+	color: rgba(0,155,0,1);
+} 
+
+[class="rating 4.4"], [class="rating 4.3"], [class="rating 4.2"], [class="rating 4.1"], [class="rating 4.0"] {
+	color: rgba(0,155,150,1);
+} 
+
+.card h1 {
+	font-size: 1.4em;
+	margin: 0px;
+	padding-top: 2px;
+}
+
+.card h2 {
+	font-size: 1em;
+	margin-top: 0px;
+	line-height: 20px;
+
+}
+
+.card h4 {
+	font-size: 1em;
+	margin-top: 0px;
+}

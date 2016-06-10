@@ -1,0 +1,20 @@
+<div id="add-container">
+	<h2>How to add</h2>
+	<p>If you are unable to find a specific tab, you can paste the UltimateGuitar.com URL below and we will generate the tab and save it to our site for everyone's use. Thanks for contributing!</p>
+	<form id="addform" role="form">
+	<div class="form-group">
+		<label for="url">URL:</label>
+		<input id="url" class="form-control" type="url" name="url" width="300" />
+		<input type="submit" class="btn btn-primary btn-block">
+	</div>
+	</form>
+</div>
+<script type="text/javascript">
+$('#addform').submit(function(e){
+	e.preventDefault();
+	var parser = document.createElement('a');
+	parser.href = $('#url').val();
+
+	window.location.href = '/pull/single/UG' + parser.pathname;
+})
+</script>

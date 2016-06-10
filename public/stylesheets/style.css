@@ -1,0 +1,27 @@
+body {
+  padding: 50px;
+  font: 14px Helvetica, Arial, sans-serif;
+  background-color: #E0DFDC !important;
+}
+
+a {
+  color: #00B7FF;
+}
+
+html {
+    overflow-y:scroll;
+}
+
+#body-container {
+	display: none;
+}
+
+#add-container {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+@font-face {
+    font-family: Blanch;
+    src: url('/fonts/VastShadow-Regular.ttf');
+}

@@ -1,0 +1,26 @@
+<link rel="stylesheet" type="text/css" href="/stylesheets/top.css">
+<link rel="stylesheet" type="text/css" href="/stylesheets/card.css">
+<div id="_header">
+	<h1>Top 100 Tabs</h1>
+</div>
+<div id="cards-container">
+{{#each docs}}
+
+	<div class="card" data-id="{{this._id}}">
+		<div class="heading {{this.rating_val}}">
+			<h1>{{this.song}} {{this.type}}</h1>
+			<h2>{{this.artist}}</h2>
+			<span>{{this.rating_val}}<br>
+			View Tab</span>
+		</div>
+		<div class="ratebar" data-value="{{this.rating_val}}"></div>
+		<div class="rating">
+			{{this.rating_count}} reviews
+			<h4>{{this.rating_text}}</h4>
+		</div>
+
+	</div>
+{{/each}}
+<button id="scrolltop" class="btn btn-block btn-info">Top</button>
+</div>
+<script type="text/javascript" src="/javascripts/card.js"></script>

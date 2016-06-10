@@ -1,0 +1,99 @@
+<link rel="stylesheet" type="text/css" href="/stylesheets/card.css">
+<div class="headig">
+	<h1>Just Tabs</h1>
+	<h2>No ads. Enter a search below to get started</h2>
+</div>
+<div class="col-md-12">
+	<div class="input-group" id="adv-search">
+		<input type="text" name="song" class="form-control" placeholder="Search for a song"/>
+		<div class="input-group-btn">
+			<div class="btn-group" role="group">
+				<div id="otherdropdown" class="dropdown dropdown-lg">
+					<button id="dropdowns" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+					<div class="dropdown-menu dropdown-menu-right" role="menu">
+						<form id="searchForm" class="form-horizontal" role="form">
+							<div class="form-group">
+								<label for="artist">Artist</label>
+								<input class="form-control" type="text" name="artist" />
+							</div>
+							<div class="form-group">
+								<label for="type">Show</label>
+								<select class="form-control">
+									<option name="type" value="both" selected>All</option>
+									<option name="type" value="Tab">Tabs</option>
+									<option name="type" value="Chords">Chords</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="filter">Filter</label>
+								<select class="form-control">
+									<option name="filter" value="top" selected>Top Rated</option>
+									<option name="filter" value="recent">Most Recent</option>
+									<option name="filter" value="comment">Most commented</option>
+								</select>
+							</div>
+							<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+						</form>
+					</div>
+				</div>
+				<button id="submitter" type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="clearfix"></div>
+<div id="cards-container">
+
+</div>
+
+<script type="text/javascript" src="/javascripts/card.js"></script>
+<style type="text/css">
+	body {
+		padding-top: 50px;
+	}
+	.dropdown.dropdown-lg .dropdown-menu {
+		margin-top: -1px;
+		padding: 6px 20px;
+	}
+	.input-group-btn .btn-group {
+		display: flex !important;
+	}
+	.btn-group .btn {
+		border-radius: 0;
+		margin-left: -1px;
+	}
+	.btn-group .btn:last-child {
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+	}
+	.btn-group .form-horizontal .btn[type="submit"] {
+		border-top-left-radius: 4px;
+		border-bottom-left-radius: 4px;
+	}
+	.form-horizontal .form-group {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.form-group .form-control:last-child {
+		border-top-left-radius: 4px;
+		border-bottom-left-radius: 4px;
+	}
+
+	.headig {
+		text-align: center;
+	}
+
+	@media screen and (min-width: 768px) {
+		#adv-search {
+			width: 500px;
+			margin: 0 auto;
+		}
+		.dropdown.dropdown-lg {
+			position: static !important;
+		}
+		.dropdown.dropdown-lg .dropdown-menu {
+			min-width: 500px;
+		}
+	}
+</style>
+<script type="text/javascript" src="javascripts/index.js"></script>

@@ -1,0 +1,63 @@
+<link rel="stylesheet" type="text/css" href="/stylesheets/tab.css">
+<div id="tab-container">
+	<div id="_header">
+		<h2>{{doc.song}} - {{doc.artist}}</h2>
+	</div>
+	<div id="rating">
+		<h3>{{doc.rating_val}}/5 x {{doc.rating_count}}</h3>
+		<h4>{{doc.rating_text}}</h4>
+	</div>
+	<div class="clearfix"></div>
+	<div id="decrease" class="fontsize">A</div>
+	<div id="increase" class="fontsize">A</div>
+	<button id="commentAnchor" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add a comment</button>
+	<div class="clearfix"></div>
+	<pre>
+{{doc.tab}}
+	</pre>
+	<div class="clearfix"></div>
+	<div id="comments-container">
+	{{#each doc.comments}}
+	<div class="commentCont">
+		<p class="username">{{this.name}}</p>
+		<p class="userdate">{{this.date}}</p>
+		<p class="usercomment">{{this.comment}}</p>
+	</div>
+	{{/each}}
+	</div>
+	<button id="commentAnchor" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add a comment</button>
+	<button id="scrolltop" class="btn btn-block btn-info">Top</button>
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Add a comment</h4>
+      </div>
+      <div class="modal-body">
+      <form id="newcomment">
+      	<fieldset class="form-group">
+      	    <label for="name">Name</label>
+      	    <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name or alias">
+      	  </fieldset>
+      	  <fieldset class="form-group">
+      	      <label for="comment">Comment</label>
+      	      <textarea type="text" class="form-control" name="comment" id="comment" rows="4" placeholder="Enter your comment"></textarea>
+      	      <small class="text-muted">be nice :)</small>
+      	    </fieldset>
+      	    <input type="hidden" name="id" value="{{doc._id}}">
+      </div>
+      <div class="modal-footer">
+      	<button type="submit" class="btn btn-primary">Submit</button>
+      	</form>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
