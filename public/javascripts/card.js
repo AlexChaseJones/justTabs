@@ -22,10 +22,10 @@ $(document).ready(function(){
 	})
 });
 
-$(document).on('click', '.card-container', function(){
-	link = $(this).data('id');
-	$('#body-container').fadeOut(500,function(){
-		window.location.href = "tab/" + link;
-	})
-})
+// $(document).on('click', '.card-container', function(){
+// 	link = $(this).data('id');
+// 	$('#body-container').fadeOut(500,function(){
+// 		window.location.href = "tab/" + link;
+// 	})
+// })
 
