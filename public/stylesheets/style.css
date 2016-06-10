@@ -25,3 +25,8 @@ html {
     font-family: Blanch;
     src: url('/fonts/VastShadow-Regular.ttf');
 }
+
+a.card-container {
+  text-decoration: none;
+  color:  #00B7FF;
+}
