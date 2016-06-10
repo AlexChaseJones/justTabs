@@ -5,6 +5,7 @@
 .card-container {
     height: 180px;
     display: inline-block;
+    z-index: 99;
 }
 
 .card {
