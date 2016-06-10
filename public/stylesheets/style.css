@@ -26,7 +26,7 @@ html {
     src: url('/fonts/VastShadow-Regular.ttf');
 }
 
-a .card-container {
+.card-container {
   text-decoration: none;
-  color:  #00B7FF;
+  color: black;
 }
