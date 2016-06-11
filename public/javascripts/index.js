@@ -25,7 +25,7 @@ $('#searchForm').submit(function(e){
 				$('#cards-container').append('<h1>We\'ve got nothing. :( Have you tried <a href="/add">Adding a tab?</a></h1>')	
 			}
 			for (var i=0; i<data.length; i++) {
-				var card = $('<a class="card-container"><div class="card" data-id="'+data[i]._id+'"><div class="heading '+data[i].rating_val+'"><h1>'+data[i].song+' '+data[i].type+'</h1><h2>'+data[i].artist+'</h2><span>'+data[i].rating_val+'<br>View Tab</span></div><div class="ratebar" data-value="'+data[i].rating_val+'"></div><div class="rating">'+data[i].rating_count+' reviews<h4>'+data[i].rating_text+'</h4></div></a>');
+				var card = $('<a class="card-container" href="tab/'+data[i]._id+'"><div class="card"><div class="heading '+data[i].rating_val+'"><h1>'+data[i].song+' '+data[i].type+'</h1><h2>'+data[i].artist+'</h2><span>'+data[i].rating_val+'<br>View Tab</span></div><div class="ratebar" data-value="'+data[i].rating_val+'"></div><div class="rating">'+data[i].rating_count+' reviews<h4>'+data[i].rating_text+'</h4></div></a>');
 				$('#cards-container').append(card);
 			}
 			$('.card').each(function(i) {
