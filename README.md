@@ -7,15 +7,14 @@
 To download, simple clone the repo and run npm install.
 
 ## Built With
-*ES5
-*Node.js
-*Express
-A few NPM Packages, namely Cheerio
-*MongoDB
-*MLabs
-*CSS3
-
-*jQuery
+* ES5
+* Node.js
+* Express
+* A few NPM Packages, namely Cheerio
+* MongoDB
+* MLabs
+* CSS3
+* jQuery
 
 
 ## Contributing
